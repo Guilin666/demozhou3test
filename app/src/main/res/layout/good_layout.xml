@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/xuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/good_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/xuan" />
+
+        <RelativeLayout
+            android:id="@+id/re_2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/good_img"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/good_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:text="辩题" />
+
+            <TextView
+                android:id="@+id/good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="价格"
+                android:textColor="#ff00"
+                android:layout_below="@+id/good_title"
+                />
+
+            <TextView
+                android:layout_below="@+id/good_price"
+                android:id="@+id/good_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="数量" />
+            <bwie.example.com.demozhou3test.view.ShopView
+                android:id="@+id/shopview"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/good_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

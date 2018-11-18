@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchActivity">
+    <LinearLayout
+        android:id="@+id/le_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+            android:id="@+id/ed_search"
+            android:hint="请输入内容"
+            android:layout_weight="9"
+            android:background="@drawable/sp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:id="@+id/tv_search"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:text="搜索"
+            android:background="@drawable/btn_sp"
+            android:layout_width="60dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/zi"
+        android:layout_below="@+id/le_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="历史记录"
+        />
+    <TextView
+        android:id="@+id/tv_clear"
+        android:layout_below="@+id/le_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="清空记录"
+        android:layout_alignParentRight="true"
+        />
+    <bwie.example.com.demozhou3test.view.GoodView
+        android:layout_below="@+id/zi"
+        android:id="@+id/goodview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></bwie.example.com.demozhou3test.view.GoodView>
+</RelativeLayout>
